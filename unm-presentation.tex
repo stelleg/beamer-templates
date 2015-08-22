@@ -1,0 +1,51 @@
+\documentclass[final]{beamer} 
+\mode<presentation>
+\usepackage{inconsolata}
+\renewcommand*\familydefault{\ttdefault}
+\usepackage{dejavu}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{lmodern}
+\renewcommand\mathfamilydefault{\rmdefault}
+
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\lstset{language=Haskell,basicstyle=\ttfamily,xleftmargin=1cm}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{arrows, fit, shapes}
+\setbeamertemplate{frametitle}{  
+  \begin{beamercolorbox}[wd=0.95\paperwidth]{lower separation line head}
+  \hspace{0.5cm}
+  \insertframetitle
+  \hfill
+  \includegraphics[width=.15\linewidth]{unm}
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{}
+
+\mode<all>
+
+\definecolor{red}{RGB}{205,16,65}
+\definecolor{grey}{RGB}{109,111,113}
+
+\setbeamerfont{structure}{family=\sffamily}
+\setbeamercolor{structure}{fg=red}
+\setbeamerfont{normal text}{family=\sffamily}
+\setbeamercolor{normal text}{fg=grey,bg=white}
+
+\title{Title}
+\author{George Stelle}
+\institute{University of New Mexico}
+%\date{\today} 
+
+\begin{document}
+\begin{frame}[fragile]
+\titlepage
+\end{frame}
+\begin{frame}{Intro}
+\begin{itemize}
+\item Lorem
+\end{itemize}
+\end{frame}
+\end{document}

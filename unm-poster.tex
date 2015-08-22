@@ -1,0 +1,92 @@
+\documentclass[final]{beamer} 
+\mode<presentation>
+\usepackage{inconsolata}
+\renewcommand*\familydefault{\ttdefault}
+\usepackage{dejavu}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{lmodern}
+\renewcommand\mathfamilydefault{\rmdefault}
+
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\lstset{language=Haskell,basicstyle=\ttfamily,xleftmargin=1cm,aboveskip=0.5cm,belowskip=0.5cm}
+\usepackage[size=a1]{beamerposter}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usetikzlibrary{arrows, fit, shapes}
+\setbeamertemplate{headline}{  
+  \leavevmode
+  \begin{beamercolorbox}[wd=\paperwidth]{headline}
+    \begin{columns}[T]
+      \begin{column}{.05\paperwidth}
+      \end{column}
+      \begin{column}{.7\paperwidth}
+        \vskip3cm
+        \raggedright
+        {\color{red}{{\LARGE{\inserttitle}}\\[1ex]}}
+        \vskip0.5cm
+        {\color{fg}{\large{\insertauthor}\\[1ex]}}
+        %{\color{fg}{\large{\insertinstitute}\\[1ex]}}
+      \end{column}
+      \begin{column}{.25\paperwidth}
+        \begin{center}
+          \includegraphics[width=.7\linewidth]{unm}
+        \end{center}
+        \vskip2cm
+      \end{column}
+    \end{columns}
+  \end{beamercolorbox}
+
+  \begin{beamercolorbox}[wd=\paperwidth]{lower separation line head}
+    \rule{0pt}{2pt}
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{}
+
+\mode<all>
+
+\definecolor{red}{RGB}{205,16,65}
+\definecolor{grey}{RGB}{109,111,113}
+
+\setbeamerfont{structure}{family=\sffamily}
+\setbeamercolor{structure}{fg=red}
+\setbeamerfont{normal text}{family=\sffamily}
+\setbeamercolor{normal text}{fg=grey,bg=white}
+
+\title{Title}
+\author{George Stelle}
+\institute{University of New Mexico}
+%\date{\today} 
+
+\begin{document}
+\begin{frame}[fragile]
+\begin{columns}[t]
+\begin{column}{.285\textwidth}
+
+\begin{block}{Introduction}
+\vspace{0.5cm}
+Lorem
+\end{block}
+\vspace{2cm}
+
+\end{column}
+
+\begin{column}{.33\textwidth}
+\begin{block}{Example}
+\vspace{0.5cm}
+\begin{itemize}
+\item Ipsum
+\end{itemize}
+\end{block}
+
+\end{column}
+
+\begin{column}{.285\textwidth}
+\begin{block}{Conclusion}
+\vspace{0.5cm}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+\end{document}
